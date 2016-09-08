@@ -1,3 +1,5 @@
+´´´
+
 # ======= Custom aliases =======
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
@@ -48,3 +50,6 @@ alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listenin
 
 # ============= Git ==============
 alias s="git status"
+
+
+´´´
