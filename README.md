@@ -1,4 +1,4 @@
-´´´
+
 
 # ======= Custom aliases =======
 
@@ -52,4 +52,4 @@ alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listenin
 alias s="git status"
 
 
-´´´
+
