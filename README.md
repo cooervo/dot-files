@@ -1,4 +1,4 @@
-
+# ==================================== MY PERSONAL CONFIG START =======================================================v
 
 # ======= Custom aliases =======
 
@@ -19,23 +19,6 @@ alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable 
 export EDITOR=/usr/bin/nano
 
 
-# ========Change prompt as "user@host & Display git branch"=============
-
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
-export CLICOLOR=1
-
-
-# ========List (ls)=======
-
-export LSCOLORS=GxFxCxDxBxegedabagaced  # List colors
-alias ls='ls -GFh'                      # Preferred list implementation
-alias lspermissions='ls -li'
-
-
 # =========Loads NVM=============
 
 export NVM_DIR="/Users/mateo/.nvm"
@@ -45,11 +28,17 @@ export NVM_DIR="/Users/mateo/.nvm"
 # ======== Networking ==========
 
 alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
-
-
+alias ports=openPorts         #lists open ports
 
 # ============= Git ==============
 alias s="git status"
+alias a="git add -A ."
+alias c="git commit -m"
 
+# ============= For bullet-train-oh-my-zsh-theme ================
 
+# -> Follow instructions on: https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
 
+export TERM="xterm-256color"
+
+# ==================================== PERSONAL CONFIG END ============================================================^
