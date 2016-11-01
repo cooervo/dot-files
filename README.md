@@ -1,5 +1,3 @@
-# ==================================== MY PERSONAL CONFIG START =======================================================v
-
 # ======= Custom aliases =======
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
