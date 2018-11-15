@@ -26,6 +26,7 @@
 
     alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
     alias ports=openPorts         #lists open ports
+    alias getip='hostname -I'
 
     # ============= Git ==============
     alias gs="git status"
