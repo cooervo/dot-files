@@ -23,9 +23,10 @@
 
 
     # ======== Networking ==========
+    
+    # Get info for process using port 3000 or X 
+    # lsof -i :3000
 
-    alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
-    alias ports=openPorts         #lists open ports
     alias getip='hostname -I'
 
     # ============= Git ==============
