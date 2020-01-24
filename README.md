@@ -33,3 +33,7 @@
     alias gs="git status"
     alias ga="git add -A ."
     alias gc="git commit -m"
+    
+    # Symbolic link: link new-file.ts to by updated everytime reference-file.ts is changed:
+    # ln -s ../en/reference-file.ts ./new-file.ts
+
