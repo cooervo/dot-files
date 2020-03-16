@@ -1,4 +1,6 @@
-    # ================================= PERSONAL CONFIG START ==========================================================
+    # =================================
+    # ---- PERSONAL CONFIG START ------
+    # =================================
 
     alias cp='cp -iv'                           # Preferred 'cp' implementation
     alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
@@ -7,33 +9,33 @@
     alias nn='nano'                              # for using nano
     alias finder='open -a Finder ./'            # f:            Opens current directory in MacOS Finder
     alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
-    alias ~="cd ~"                              # ~:            Go Home
     alias c='clear'                             # c:            Clear terminal display
-    alias l='ls -a'
-
-    # ========Set nano as default editor ==========
-
-    export EDITOR=/usr/bin/nano
-
-
-    # =========Loads NVM=============
-
-    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-
-    # ======== Networking ==========
+    alias l='clear && ls -a'
     
-    # Get info for process using port 3000 or X 
-    # lsof -i :3000
-
-    alias getip='hostname -I'
-
-    # ============= Git ==============
+    # -- Docker --
+    alias dc="docker-compose"
+    alias dprune="docker system prune -a"
+    
+    # -- Git --
     alias gs="git status"
-    alias ga="git add -A ."
-    alias gc="git commit -m"
+    alias ga="git add"
+    alias gc="git commit"
     
-    # Symbolic link: link new-file.ts to by updated everytime reference-file.ts is changed:
+    # -- Networking --
+    alias getip='hostname -I' 
+
+   
+    export EDITOR=/usr/bin/nano # Set nano as default editor
+
+
+    # =================================
+    # ----      Examples         ------
+    # =================================
+    
+    # Symbolic link: 
+    # link new-file.ts to by updated everytime reference-file.ts is changed:
     # ln -s ../en/reference-file.ts ./new-file.ts
+    
+    # Get process on port 3000 or X 
+    # lsof -i :3000
 
