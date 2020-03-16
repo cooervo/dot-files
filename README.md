@@ -15,7 +15,8 @@
     # -- Docker --
     alias dc="docker-compose"
     alias dprune="docker system prune -a"
-    
+    alias dclean="docker system prune -a"
+
     # -- Git --
     alias gs="git status"
     alias ga="git add"
