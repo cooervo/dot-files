@@ -10,7 +10,7 @@
     alias finder='open -a Finder ./'            # f:            Opens current directory in MacOS Finder
     alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
     alias c='clear'                             # c:            Clear terminal display
-    alias l='clear && ls -a'
+    alias l='clear && ls -la'
     
     # -- Docker --
     alias dc="docker-compose"
