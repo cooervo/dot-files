@@ -20,8 +20,9 @@
     # -- Git --
     alias gs="git status"
     alias ga="git add"
-    alias gc="git commit"
-    
+    alias gc="git checkout"
+    alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
     # -- Networking --
     alias getip='hostname -I' 
 
