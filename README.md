@@ -6,6 +6,7 @@
     alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
     alias ..='cd ../'                           # Go back 1 directory level
 
+    alias tf='terraform'                              # for terraform
     alias nn='nano'                              # for using nano
     alias finder='open -a Finder ./'            # f:            Opens current directory in MacOS Finder
     alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
