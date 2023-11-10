@@ -1,3 +1,4 @@
+
     # =================================
     # ---- PERSONAL CONFIG START ------
     # =================================
@@ -5,8 +6,26 @@
     alias cp='cp -iv'                           # Preferred 'cp' implementation
     alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
     alias ..='cd ../'                           # Go back 1 directory level
+  
+    # -- Kubernetes --
+    alias k='kubectl'
+    alias kl='kubectl logs'
+    
+    alias ka='kubectl apply -f'
+    alias kaf='kubectl apply -f'
+    alias kd='kubectl delete -f'
+    alias kdf='kubectl delete -f'
+    
+    alias kgp='kubectl get pods'
+    alias kp='kubectl get pods'
+    alias kpw='kp --watch'	
 
-    alias tf='terraform'                              # for terraform
+    # -- Terraform --
+    alias tf='terraform'
+    alias tfp='terraform plan'
+    alias tfa='terraform apply'
+    alias tfaaa='terraform apply -auto-approve'
+
     alias nn='nano'                              # for using nano
     alias finder='open -a Finder ./'            # f:            Opens current directory in MacOS Finder
     alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
@@ -45,4 +64,3 @@
     
     # Get process on port 3000 or X 
     # lsof -i :3000
-
